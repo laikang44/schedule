@@ -1,0 +1,41 @@
+<!doctype html>
+
+<style>
+
+.button {
+  
+  padding: 15px 30px;
+  
+}
+
+</style>
+
+<html>
+
+    <body>
+
+        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSCyPf81NcSW6iD3A99bElWSWpAdZRIVqCdrlexKE5dGvVSPOXKcqieFg_UWRhdkw/pubhtml?gid=343780285&single=true" id="myframe1" name="myframe1" height=900" width="565"></iframe>
+        
+    </body>
+
+    <br></br>
+
+    <button class="button" onclick="myFunction()">Jadual Esok</button>
+
+</html>
+
+<script>
+
+window.setInterval("reloadIFrame();", 30000);
+
+function reloadIFrame() {
+
+ document.getElementById("myframe1").src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSCyPf81NcSW6iD3A99bElWSWpAdZRIVqCdrlexKE5dGvVSPOXKcqieFg_UWRhdkw/pubhtml?gid=343780285&single=true";
+
+}
+
+function myFunction() {
+  window.open("https://kpumbaischedule.w3spaces.com/index2.html", "_self");
+}
+
+</script>
